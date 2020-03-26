@@ -10,11 +10,11 @@
     background: $primary-violet;
 }
 a.navbar-item  {
-    color: $gray;
+    @extend .has-text-grey;
     @extend .has-text-weight-bold;
     &:hover {
         background-color: transparent;
-        color: $grayishViolet;
+        color: $grayishViolet !important;
     }
 }
 hr.mobile-hr {
