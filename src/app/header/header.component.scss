@@ -1,0 +1,31 @@
+@import "../../assets/scss/colors.scss";
+@import "../../../node_modules/bulma/bulma.sass";
+
+.navbar-menu.is-active {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    background: $primary-violet;
+}
+a.navbar-item  {
+    @extend .has-text-grey;
+    @extend .has-text-weight-bold;
+    &:hover {
+        background-color: transparent;
+        color: $grayishViolet !important;
+    }
+}
+hr.mobile-hr {
+    @extend .is-hidden-desktop;
+    background-color: $gray;
+    height: 1px;
+    margin: .5rem 2rem ;
+}
+
+@media screen and (min-width: $desktop) {
+    a.navbar-item:hover {
+        color: $primary-violet;
+    }
+}
