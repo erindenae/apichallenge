@@ -39,7 +39,6 @@ export class HeaderComponent implements OnInit {
       const target = el.dataset.target;
       const $target = document.getElementById(target);
       if (screenWidth>=1024 && el.classList.contains('is-active')){
-        console.log("im here");
         el.classList.remove('is-active');
         $target.classList.toggle('is-active');
         
