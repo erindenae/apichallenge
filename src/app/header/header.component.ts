@@ -31,6 +31,26 @@ export class HeaderComponent implements OnInit {
         $target.classList.toggle('is-active');
 
       });
+
+
+      //close menu on screen resize
+     window.addEventListener("resize", (screenwidth)=> {
+      let screenWidth = document.documentElement.clientWidth;
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+      if (screenWidth>=1024 && el.classList.contains('is-active')){
+        console.log("im here");
+        el.classList.remove('is-active');
+        $target.classList.toggle('is-active');
+        
+      }
+    })
+
+
+
+
+
+     
     });
   }
 

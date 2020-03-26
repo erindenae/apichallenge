@@ -1,0 +1,8 @@
+@import '../scss/colors.scss';
+
+#short-nav {
+    a.button.is-primary {
+        @extend .is-rounded;
+        background-color: $primary-cyan;
+    }
+}
