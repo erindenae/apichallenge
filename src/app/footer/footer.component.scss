@@ -1,0 +1,61 @@
+@import "../../assets/scss/colors.scss";
+
+footer.footer {
+    background-color: $veryDarkViolet;
+    color: $gray;
+    text-align: center;
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        margin-bottom: 20px;
+        &.logo {
+         margin: 20px 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    }
+    .logofill {
+        fill: white;
+    }
+    .title.is-5 {
+        color: white;
+    }
+    a {
+        color: $gray;
+        &:hover {
+            color: $primary-cyan;
+        }
+    }
+    a svg {
+        margin: 0 10px;
+        background-color: transparent;
+        &:hover {
+            path {
+            fill: $primary-cyan;
+            }
+        }
+    }
+    
+    .attribution {
+        font-size: .6rem;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1024px) {
+        text-align: left;
+        padding-left: 3rem;
+        padding-top: 4rem;
+        .columns {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .column.logo {
+            margin: 0;
+        }
+    }
+}
