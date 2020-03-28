@@ -1,0 +1,24 @@
+@import '../../../node_modules/bulma/bulma.sass';
+@import '../../assets/scss/colors.scss';
+@import '../../assets/scss/brand.scss';
+
+
+section.cta-banner {
+    background-image: url('../../assets/images/bg-boost-mobile.svg');
+    background-size: cover;
+    background-color: $primary-violet;
+    padding: 6rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    h3.title.is-3 {
+        color: white;
+        font-weight: bold;
+    }
+
+    @media screen and (min-width: 1024px) {
+        background-image: url('../../assets/images/bg-boost-desktop.svg');
+        
+    }
+}

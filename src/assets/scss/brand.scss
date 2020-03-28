@@ -1,8 +1,10 @@
 @import '../scss/colors.scss';
 
-#short-nav {
-    a.button.is-primary {
-        @extend .is-rounded;
-        background-color: $primary-cyan;
+a.button.is-primary {
+    @extend .is-rounded;
+    background-color: $primary-cyan;
+    &:hover {
+        background-color: hsl(180, 65%, 60%);
     }
 }
+
