@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CtaBannerComponent } from './cta-banner/cta-banner.component';
+import { TwoUpFeatureComponent } from './two-up-feature/two-up-feature.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CtaBannerComponent
+    CtaBannerComponent,
+    TwoUpFeatureComponent
   ],
   imports: [
     BrowserModule,

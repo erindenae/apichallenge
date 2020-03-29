@@ -1,0 +1,31 @@
+@import '../../assets/scss/colors.scss';
+
+section.two-up-feat {
+    .columns {
+        text-align: center;
+    }
+    .image.is-4by3 {
+        padding-top: 0;
+        right: -5rem;
+        
+    }
+    .cta.button.is-primary {
+        margin-top: 1.5rem;
+    }
+    
+    p.description {
+        color: $grayishViolet;
+    }
+
+    @media screen and (min-width: 1024px) {
+       .columns {
+            text-align: left;
+       }
+       .image.is-4by3 {
+        right: 0;
+       }
+        img {
+            min-width: 150%;
+        }
+    }
+}
