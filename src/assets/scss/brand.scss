@@ -3,6 +3,15 @@
 a.button.is-primary {
     @extend .is-rounded;
     background-color: $primary-cyan;
+    border: 0;
+    &:hover {
+        background-color: hsl(180, 65%, 60%);
+    }
+}
+a.button.is-primary-square {
+    background-color: $primary-cyan;
+    color: white;
+    border: 0;
     &:hover {
         background-color: hsl(180, 65%, 60%);
     }

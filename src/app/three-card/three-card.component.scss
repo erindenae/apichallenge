@@ -1,8 +1,10 @@
 @import '../../assets/scss/colors.scss';
+
 section.three-card {
     background-color: #F0F1F7;
     text-align: center;
-    word-break: keep-all;;
+    padding-top: 9rem;
+    margin-top: -6rem;
 
     p.description{
         margin-bottom: 2rem;

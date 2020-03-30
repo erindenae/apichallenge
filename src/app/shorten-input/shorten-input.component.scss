@@ -1,0 +1,29 @@
+@import '../../assets/scss/colors.scss';
+section.shorten-input {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .input-container{
+        width:80%;
+        background-color: $primary-violet;
+        padding: 2rem 3rem;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        background-image: url(../../assets/images/bg-shorten-mobile.svg);
+        background-size: cover;
+    }
+    input[type="text"] {
+        width: 80%;
+        margin-right: 1rem;
+        padding: .5rem 1rem;
+    }
+
+    @media screen and (min-width: 1024px){
+        .input-container{
+            width: 80%;
+            background-image: url(../../assets/images/bg-shorten-desktop.svg);
+        }
+    }
+}

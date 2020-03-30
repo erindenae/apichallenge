@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CtaBannerComponent } from './cta-banner/cta-banner.component';
 import { TwoUpFeatureComponent } from './two-up-feature/two-up-feature.component';
 import { ThreeCardComponent } from './three-card/three-card.component';
+import { ShortenInputComponent } from './shorten-input/shorten-input.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ThreeCardComponent } from './three-card/three-card.component';
     FooterComponent,
     CtaBannerComponent,
     TwoUpFeatureComponent,
-    ThreeCardComponent
+    ThreeCardComponent,
+    ShortenInputComponent
   ],
   imports: [
     BrowserModule,
