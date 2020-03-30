@@ -1,0 +1,44 @@
+@import '../../assets/scss/colors.scss';
+section.three-card {
+    background-color: #F0F1F7;
+    text-align: center;
+    word-break: keep-all;;
+
+    p.description{
+        margin-bottom: 2rem;
+    }
+    .column {
+        text-align: left;
+        margin-top: 2rem;
+        
+    }
+    .card {
+        padding-top: 2rem;
+        border-radius: 8px;
+        
+    }
+    .card-icons {
+        background-color: $primary-violet;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin-top: -4rem;
+    }
+
+
+    @media screen and (min-width: 1024px) {
+        .column {
+            margin-top: 0;
+            &:nth-child(2){
+                margin-top: 2rem;
+            }
+            &:nth-child(3){
+                margin-top: 4rem;
+            }
+        }
+    }
+}
